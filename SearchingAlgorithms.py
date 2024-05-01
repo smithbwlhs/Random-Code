@@ -9,7 +9,8 @@ def linear_search(data, target):
     return -1
 
 def binary_search(data, target):
-    low, high = 0, len(data) - 1
+    low = 0
+    high = len(data) - 1
     while low <= high:
         mid = (low + high) // 2
         if data[mid] < target:
